@@ -1,10 +1,4 @@
-/*-----------------------------------------------------------------
-
-Template Name: Stratify - Business Consulting HTML Template
-Author:  ThemeMascot
-Author URI: https://themeforest.net/user/thememascot/portfolio
-Version: 1.0.0
-Description: Stratify - Business Consulting HTML Template
+/*
 
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS
@@ -31,7 +25,7 @@ CSS TABLE OF CONTENTS
 (function ($) {
 	("use strict");
 
-	
+
 	/* ---------------------------------------------------------------------- */
 	/* --------------------------- Start Demo Switcher  --------------------- */
 	/* ---------------------------------------------------------------------- */
@@ -61,7 +55,7 @@ CSS TABLE OF CONTENTS
 	const loader = () => {
 		$(window).on("load", function () {
 			$("#preloader").addClass("loaded");
-			$("#preloader").delay(500).fadeOut();
+			$("#preloader").delay(100).fadeOut();
 		});
 	};
 	loader();
@@ -83,9 +77,9 @@ CSS TABLE OF CONTENTS
 	// Header area end here ***
 
 	// Megamenu-helper area start here ***
-	 $(".megamenu").each(function () {
-			$(this).closest(".mean-nav").addClass("megamenuHelper");
-		});
+	$(".megamenu").each(function () {
+		$(this).closest(".mean-nav").addClass("megamenuHelper");
+	});
 	// Megamenu-helper area end here ***
 
 	// Gsap Animation area start here ***
@@ -629,6 +623,7 @@ CSS TABLE OF CONTENTS
 		spaceBetween: 0,
 		centeredSlides: true,
 		allowTouchMove: false,
+		spaceBetween: 20,
 		speed: 2500,
 		autoplay: {
 			delay: 1,
@@ -648,10 +643,10 @@ CSS TABLE OF CONTENTS
 				slidesPerView: 4,
 			},
 			1300: {
-				slidesPerView: 5,
+				slidesPerView: 3,
 			},
 			1900: {
-				slidesPerView: 6,
+				slidesPerView:4,
 			},
 		},
 	});
@@ -934,8 +929,8 @@ CSS TABLE OF CONTENTS
 
 		$("input.property-amount").val(
 			$(".price-range-slider").slider("values", 0) +
-				" - $" +
-				$(".price-range-slider").slider("values", 1)
+			" - $" +
+			$(".price-range-slider").slider("values", 1)
 		);
 	}
 
@@ -945,13 +940,13 @@ CSS TABLE OF CONTENTS
 	}
 
 	//Fact Counter + Text Count
-	if($('.count-box').length){
-		$('.count-box').appear(function(){
-	
+	if ($('.count-box').length) {
+		$('.count-box').appear(function () {
+
 			var $t = $(this),
 				n = $t.find(".count-text").attr("data-stop"),
 				r = parseInt($t.find(".count-text").attr("data-speed"), 10);
-				
+
 			if (!$t.hasClass("counted")) {
 				$t.addClass("counted");
 				$({
@@ -961,16 +956,16 @@ CSS TABLE OF CONTENTS
 				}, {
 					duration: r,
 					easing: "linear",
-					step: function() {
+					step: function () {
 						$t.find(".count-text").text(Math.floor(this.countNum));
 					},
-					complete: function() {
+					complete: function () {
 						$t.find(".count-text").text(this.countNum);
 					}
 				});
 			}
-			
-		},{accY: 0});
+
+		}, { accY: 0 });
 	}
 
 	//Progress Bar
