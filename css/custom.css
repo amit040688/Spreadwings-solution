@@ -46,16 +46,24 @@ body {
   font-weight: 400;
 }
 
+
 h1,
 h2,
-h3,
+h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: var(--font-title);
+}
+
+
 h4,
 h5,
 h6 {
   margin: 0;
   padding: 0;
   color: var(--heading-color);
-  font-family: var(--font-title);
+  font-family: var(--font-body);
 }
 
 h1 {
@@ -139,7 +147,7 @@ span {
 }
 
 a {
-  font-family: var(--font-title);
+  font-family: var(--font-body);
   text-decoration: none;
   display: inline-block;
   color: inherit;
@@ -4781,6 +4789,11 @@ figure {
   gap: 60px;
 }
 
+.header-top__links a{
+font-size: 13px;
+letter-spacing: .5px;
+}  
+
 .header-top__links li {
   display: flex;
   align-items: center;
@@ -8964,6 +8977,7 @@ figure {
   color: #777;
   font-size: 15px;
   line-height: 1.4;
+  white-space: nowrap;
 }
 
 .check-icon {
@@ -15036,7 +15050,7 @@ a.know-more:hover {
 
 .service__item p {
   margin-top: 30px;
-      text-align: justify;
+  text-align: justify;
 }
 
 .service__item:hover .icon {
@@ -15243,7 +15257,7 @@ a.know-more:hover {
   width: 0;
   height: 100%;
   background-color: var(--black);
-      /* background: linear-gradient(100deg, #43b8ff 0%, #1464ff 100%); */
+  /* background: linear-gradient(100deg, #43b8ff 0%, #1464ff 100%); */
   content: "";
   z-index: -1;
   transition: 0.5s;
@@ -17923,7 +17937,7 @@ a.know-more:hover {
   font-family: var(--font-title);
   color: var(--white);
   background-color: var(--black);
-      /* background: linear-gradient(100deg, #43b8ff 0%, #1464ff 100%); */
+  /* background: linear-gradient(100deg, #43b8ff 0%, #1464ff 100%); */
 }
 
 .work-eleven__item .image::after {
@@ -21027,7 +21041,7 @@ Page Title
 .service-sidebar {
   position: relative;
   display: block;
-  max-width: 365px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -21409,9 +21423,9 @@ Page Title
   padding: 19px 40px;
 }
 
-.sidebar-service-list li a:hover {
+/* .sidebar-service-list li a:hover {
   color: var(--theme-color1);
-}
+} */
 
 .sidebar-service-list li a:hover i {
   transform: translateY(-50%);
