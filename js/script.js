@@ -646,7 +646,7 @@ CSS TABLE OF CONTENTS
 				slidesPerView: 3,
 			},
 			1900: {
-				slidesPerView:4,
+				slidesPerView: 4,
 			},
 		},
 	});
@@ -1097,3 +1097,27 @@ CSS TABLE OF CONTENTS
 	wow.init();
 	// WOW Animatin area start here ***
 })(jQuery);
+
+/* =========================================
+			FAQ
+		 ========================================== */
+
+document.querySelectorAll(".faq-question").forEach(function (button) {
+
+	button.addEventListener("click", function () {
+
+		const item = this.parentElement;
+
+		document.querySelectorAll(".faq-item").forEach(function (otherItem) {
+
+			if (otherItem !== item) {
+				otherItem.classList.remove("active");
+			}
+
+		});
+
+		item.classList.toggle("active");
+
+	});
+
+});
