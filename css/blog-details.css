@@ -1,0 +1,1377 @@
+
+        /* ================= BLOG AREA ================= */
+        .blog-section {
+            padding: 62px 0 85px;
+        }
+
+        .blog-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 340px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .blog-main {
+            min-width: 0;
+        }
+
+        .featured-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 7px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .date-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 53px;
+            height: 58px;
+            background: var(--theme-color1);
+            color: #fff;
+            text-align: center;
+            padding-top: 9px;
+            line-height: 1.1;
+        }
+
+        .date-box strong {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .date-box span {
+            display: block;
+            font-size: 9px;
+            text-transform: uppercase;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 13px 0 8px;
+            font-size: 11px;
+            color: var(--paragraph);
+        }
+
+        .post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .post-meta i {
+            color: var(--theme-color1);
+        }
+
+        .post-title {
+            font-size: 27px;
+            margin-bottom: 16px;
+        }
+
+        .post-content p {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .post-content h2 {
+            font-size: 26px;
+            margin: 38px 0 14px;
+        }
+
+        .post-content h3 {
+            font-size: 21px;
+            margin: 27px 0 12px;
+        }
+
+        .post-content ul {
+            list-style: disc;
+            padding-left: 22px;
+            margin: 10px 0 22px;
+        }
+
+        .post-content li {
+            margin-bottom: 8px;
+        }
+
+        /* Business Development Engine */
+        .engine {
+            margin: 28px 0;
+            background: var(--sub-bg2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .engine-title {
+            text-align: center;
+            font-family: var(--font-title);
+            font-size: 22px;
+            color: var(--theme-color1);
+            margin-bottom: 20px;
+        }
+
+        .engine-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            position: relative;
+        }
+
+        .engine-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 20px 15px;
+            text-align: center;
+            border-radius: 6px;
+            position: relative;
+        }
+
+        .engine-card h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .engine-card p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .engine-card:not(:last-child)::after {
+            content: "↔";
+            position: absolute;
+            right: -17px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--theme-color1);
+            font-size: 20px;
+            z-index: 2;
+        }
+
+        /* Process */
+        .process-list {
+            margin: 25px 0;
+            border-left: 2px solid #d8e2ed;
+            padding-left: 25px;
+        }
+
+        .process-item {
+            position: relative;
+            margin-bottom: 23px;
+        }
+
+        .process-item::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: var(--theme-color1);
+            left: -33px;
+            top: 7px;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 1px var(--theme-color1);
+        }
+
+        .process-item strong {
+            display: block;
+            color: var(--heading-color);
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .process-item span {
+            font-size: 13px;
+        }
+
+        /* Comparison table */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 22px 0 28px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border-bottom: 1px solid var(--border);
+            padding: 13px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .comparison-table th {
+            color: #fff;
+            background: var(--theme-color1);
+            font-weight: 500;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .comparison-table td:first-child {
+            color: var(--heading-color);
+            font-weight: 600;
+            width: 22%;
+        }
+
+        /* Tags */
+        .post-footer {
+            border-top: 1px solid var(--border);
+            margin-top: 35px;
+            padding-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tags {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .tags strong {
+            margin-right: 6px;
+            color: var(--heading-color);
+        }
+
+        .tag {
+            padding: 7px 15px;
+            border-radius: 30px;
+            background: var(--theme-color1);
+            color: #fff;
+            font-size: 11px;
+        }
+
+        .share {
+            display: flex;
+            gap: 7px;
+        }
+
+        .share a {
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--sub-bg);
+            color: var(--theme-color1);
+            font-size: 12px;
+        }
+
+        .share a:hover {
+            background: var(--theme-color1);
+            color: #fff;
+        }
+
+        /* Related posts */
+        .related-posts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 18px;
+        }
+
+        .related-card {
+            min-height: 105px;
+            background: var(--sub-bg);
+            border-radius: 7px;
+            padding: 25px 22px;
+            color: var(--heading-color);
+            font-family: var(--font-title);
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+        }
+
+        .related-card:hover {
+            background: var(--theme-color1);
+            color: #fff;
+        }
+
+        /* Comments */
+        .comments-section {
+            margin-top: 42px;
+        }
+
+        .comments-title {
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .comment {
+            display: grid;
+            grid-template-columns: 75px 1fr;
+            gap: 20px;
+            padding: 25px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comment-avatar {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #e8edf2;
+        }
+
+        .comment-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .comment-name {
+            font-family: var(--font-title);
+            color: var(--heading-color);
+            font-size: 16px;
+        }
+
+        .reply-btn {
+            background: var(--theme-color1);
+            color: #fff;
+            border-radius: 25px;
+            padding: 6px 18px;
+            font-size: 10px;
+        }
+
+        .comment p {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        /* Comment form */
+        .comment-form {
+            margin-top: 40px;
+        }
+
+        .comment-form h2 {
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #e9ecf0;
+            border-radius: 25px;
+            padding: 13px 17px;
+            font-family: var(--font-body);
+            font-size: 12px;
+            color: var(--paragraph);
+            margin-bottom: 10px;
+        }
+
+        .comment-form textarea {
+            min-height: 115px;
+            border-radius: 16px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            border: 0;
+            background: var(--theme-color1);
+            color: #fff;
+            border-radius: 25px;
+            padding: 12px 42px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-size: 12px;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            background: #287dd8;
+        }
+
+        /* ================= SIDEBAR ================= */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .sidebar-widget {
+            background: var(--sub-bg);
+            border-radius: 7px;
+            padding: 27px 25px;
+        }
+
+        .search-widget {
+            padding: 0;
+            background: transparent;
+        }
+
+        .search-box {
+            height: 62px;
+            background: var(--theme-color1);
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            padding: 0 22px;
+        }
+
+        .search-box input {
+            width: 100%;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 12px;
+        }
+
+        .search-box input::placeholder {
+            color: rgba(255,255,255,.7);
+        }
+
+        .search-box button {
+            border: 0;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .widget-title {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .latest-post {
+            display: grid;
+            grid-template-columns: 65px 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .latest-post:last-child {
+            margin-bottom: 0;
+        }
+
+        .latest-post img {
+            width: 65px;
+            height: 49px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .latest-post small {
+            display: block;
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+
+        .latest-post strong {
+            display: block;
+            color: var(--black0);
+            font-size: 11px;
+            line-height: 1.35;
+        }
+
+        .category-list li {
+            padding: 8px 0;
+            font-size: 12px;
+            color: var(--paragraph);
+        }
+
+        .category-list li.active {
+            background: #fff;
+            border-radius: 6px;
+            padding: 10px 12px;
+            color: var(--theme-color1);
+            font-weight: 600;
+        }
+
+        .sidebar-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .sidebar-tags a {
+            background: #fff;
+            border-radius: 30px;
+            padding: 6px 13px;
+            font-size: 10px;
+            color: var(--paragraph);
+        }
+
+        .sidebar-tags a:hover {
+            background: var(--theme-color1);
+            color: #fff;
+        }
+
+        .recent-comment {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 13px;
+            font-size: 10px;
+        }
+
+        .recent-comment:last-child {
+            margin-bottom: 0;
+        }
+
+        .comment-icon {
+            flex: 0 0 27px;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--theme-color1);
+            color: #fff;
+            font-size: 9px;
+        }
+
+        /* ================= CTA / FOOTER ================= */
+        .cta {
+            background: #101010;
+            color: #fff;
+            padding: 34px 0 27px;
+        }
+
+        .cta-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255,255,255,.15);
+        }
+
+        .cta h2 {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .cta-btn {
+            background: linear-gradient(90deg, #43a5ff, #0876ed);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 25px;
+            font-size: 11px;
+        }
+
+        .footer-main {
+            padding: 28px 0;
+            display: grid;
+            grid-template-columns: 1.7fr .8fr .8fr 1.2fr;
+            gap: 35px;
+        }
+
+        .footer-col p,
+        .footer-col li,
+        .footer-col a {
+            color: #c4c4c4;
+            font-size: 11px;
+            line-height: 1.8;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 7px;
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #fff;
+            color: var(--theme-color1);
+            display: grid;
+            place-items: center;
+            font-size: 10px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,.15);
+            padding-top: 15px;
+            text-align: center;
+            color: #aaa;
+            font-size: 10px;
+        }
+
+        /* ================= MOBILE MENU ================= */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 300px;
+            height: 100vh;
+            background: #fff;
+            z-index: 999;
+            padding: 30px;
+            box-shadow: -10px 0 30px rgba(0,0,0,.15);
+            transition: var(--transition);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-close {
+            border: 0;
+            background: transparent;
+            font-size: 24px;
+            color: var(--theme-color1);
+            float: right;
+            cursor: pointer;
+        }
+
+        .mobile-menu ul {
+            clear: both;
+            padding-top: 45px;
+        }
+
+        .mobile-menu li {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 13px 0;
+            color: var(--theme-color1);
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 991px) {
+            .main-nav {
+                display: none;
+            }
+
+            .blog-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: start;
+            }
+
+            .search-widget {
+                grid-column: 1 / -1;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .featured-image img {
+                height: 430px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                width: min(100% - 28px, 600px);
+            }
+
+            .top-contact {
+                font-size: 10px;
+            }
+
+            .top-social {
+                gap: 5px;
+            }
+
+            .top-social a {
+                width: 23px;
+            }
+
+            .main-header {
+                height: 68px;
+            }
+
+            .logo img {
+                width: 100px;
+            }
+
+            .header-actions {
+                gap: 12px;
+            }
+
+            .page-banner {
+                min-height: 230px;
+            }
+
+            .banner-kicker {
+                font-size: 8px;
+                letter-spacing: 3px;
+            }
+
+            .banner-content h1 {
+                font-size: 30px;
+            }
+
+            .blog-section {
+                padding: 40px 0 60px;
+            }
+
+            .featured-image img {
+                height: 300px;
+            }
+
+            .post-title {
+                font-size: 23px;
+            }
+
+            .post-content h2 {
+                font-size: 23px;
+            }
+
+            .engine {
+                padding: 15px;
+            }
+
+            .engine-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .engine-card:not(:last-child)::after {
+                content: "↓";
+                right: auto;
+                left: 50%;
+                top: auto;
+                bottom: -20px;
+                transform: translateX(-50%);
+            }
+
+            .process-list {
+                padding-left: 22px;
+            }
+
+            .sidebar {
+                display: flex;
+            }
+
+            .related-posts {
+                grid-template-columns: 1fr;
+            }
+
+            .comment {
+                grid-template-columns: 55px 1fr;
+                gap: 13px;
+            }
+
+            .comment-avatar {
+                width: 55px;
+                height: 55px;
+            }
+
+            .comment-top {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .cta-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta h2 {
+                font-size: 25px;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .top-contact span {
+                display: none;
+            }
+
+            .page-banner {
+                min-height: 205px;
+            }
+
+            .banner-content h1 {
+                font-size: 27px;
+            }
+
+            .featured-image img {
+                height: 245px;
+            }
+
+            .post-content p {
+                font-size: 13px;
+            }
+
+            .post-meta {
+                flex-wrap: wrap;
+            }
+
+            .post-footer {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="top-contact">
+                <i class="fa-regular fa-envelope"></i>
+                <span>info@spreadwingsolution.com</span>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Spreadwings Solutions">
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#" class="active">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="menu-btn" id="openMenu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <div class="banner-kicker">REAL PEOPLE / REAL EXPERIENCES / REAL IMPACT</div>
+            <h1>Blog Details</h1>
+            <div class="title-line"></div>
+            <div class="breadcrumb">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Blog Details</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <main class="blog-section">
+        <div class="container blog-layout">
+
+            <!-- MAIN CONTENT -->
+            <article class="blog-main">
+
+                <div class="featured-image">
+                    <img src="images/blog/business-development.jpg" alt="Business development for dealership">
+                    <div class="date-box">
+                        <strong>28</strong>
+                        <span>Aug</span>
+                    </div>
+                </div>
+
+                <div class="post-meta">
+                    <span><i class="fa-solid fa-user"></i> Admin</span>
+                    <span><i class="fa-solid fa-comments"></i> 02 Comments</span>
+                    <span><i class="fa-solid fa-folder"></i> Business Development</span>
+                </div>
+
+                <h2 class="post-title">What Is Business Development? The Strategic Guide to Dealership Growth and Profitability</h2>
+
+                <div class="post-content">
+                    <p>
+                        In India's competitive retail and distribution ecosystem, running an auto, machinery, or commercial dealership requires more than maintaining showroom inventory. Dealerships face changing buyer behaviours, compressed operating margins, fluctuating OEM targets, and high customer turnover.
+                    </p>
+
+                    <p>
+                        Many dealerships mistake business development for standard sales pitches or short-term advertising. In reality, true business development is a structural discipline. It aligns operational analysis, customer retention, channel networks, and process management to build sustainable, long-term profitability.
+                    </p>
+
+                    <p>
+                        Whether managing a multi-location dealership network or modernising a single retail footprint, understanding business development is vital. This guide covers what business development means for dealerships, its core components, how it operates in practice, and how structured consulting drives bottom-line growth.
+                    </p>
+
+                    <h2>What is Business Development?</h2>
+
+                    <p>
+                        <strong>Business development</strong> is the strategic process of creating long-term value for an organisation through customers, markets, and operational relationships.
+                    </p>
+
+                    <p>
+                        For retail dealerships and distribution networks, business development goes beyond standard front-counter selling. It involves evaluating why deals stall, identifying margin leaks, building influencer and loyalty networks, and streamlining internal operations to maintain predictable revenue.
+                    </p>
+
+                    <div class="engine">
+                        <div class="engine-title">Dealership Business Development Engine</div>
+                        <div class="engine-grid">
+                            <div class="engine-card">
+                                <h4>Front-End<br>Market Reach</h4>
+                                <p>Lead Generation<br>Influencer Networks<br>Digital Marketing</p>
+                            </div>
+                            <div class="engine-card">
+                                <h4>Internal<br>Operations</h4>
+                                <p>Root Cause Analysis<br>Compliance &amp; Training<br>Process Management</p>
+                            </div>
+                            <div class="engine-card">
+                                <h4>Long-Term<br>Retention</h4>
+                                <p>Loyalty Programs<br>Customer Engagement<br>Repeat Business</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        Instead of treating sales, marketing, and after-sales service as isolated tasks, business development unifies them into a cohesive commercial strategy.
+                    </p>
+
+                    <h2>How Business Development Works for Dealerships</h2>
+
+                    <p>
+                        A dealership's growth strategy requires a structured, multi-step framework that identifies operational friction and replaces it with repeatable processes:
+                    </p>
+
+                    <div class="process-list">
+                        <div class="process-item">
+                            <strong>1. Diagnostic Analysis</strong>
+                            <span>Root cause audits, margin leaks, workflow reviews.</span>
+                        </div>
+                        <div class="process-item">
+                            <strong>2. Solution Design &amp; Process Standardisation</strong>
+                            <span>Industrial process adherence, SOP setup, compliance protocols.</span>
+                        </div>
+                        <div class="process-item">
+                            <strong>3. Workforce Alignment &amp; Training</strong>
+                            <span>Cross-functional team training and sales enablement.</span>
+                        </div>
+                        <div class="process-item">
+                            <strong>4. Channel &amp; Network Expansion</strong>
+                            <span>Influencer outreach, digital campaigns and customer loyalty programs.</span>
+                        </div>
+                        <div class="process-item">
+                            <strong>5. Sustainable Profitability &amp; Retention</strong>
+                            <span>Repeat customer revenue, optimised overhead and maximised margins.</span>
+                        </div>
+                    </div>
+
+                    <h3>Key Activities</h3>
+                    <ul>
+                        <li><strong>Diagnostic Business Analysis:</strong> Evaluating day-to-day dealership metrics—inquiry footfalls, test-drive conversions, service-bay turnaround, and warranty claim cycles—to detect where margins are lost.</li>
+                        <li><strong>Root Cause Analysis (RCA):</strong> Investigating operational slowdowns at the source rather than treating superficial symptoms.</li>
+                        <li><strong>Process Adherence &amp; Solution Design:</strong> Formulating standard operating procedures (SOPs) for inventory management, workshop workflows, and customer follow-up protocols.</li>
+                        <li><strong>Team Enablement &amp; Training:</strong> Aligning front-line sales consultants, service advisors, and compliance staff to uphold high execution standards.</li>
+                        <li><strong>Customer &amp; Influencer Ecosystems:</strong> Launching structured loyalty initiatives and local influencer networks to secure steady referral streams.</li>
+                    </ul>
+
+                    <h2>Core Pillars of Dealership Business Development</h2>
+                    <p>Modern business development for dealerships combines tactical commercial initiatives with disciplined internal processes:</p>
+                    <ul>
+                        <li><strong>Business Intelligence &amp; Market Research:</strong> Analyzing localized territory demographics, competitor pricing, and demand trends.</li>
+                        <li><strong>Root Cause Analysis (RCA):</strong> Auditing unclosed leads, workshop delays, and inventory bottlenecks to prevent systemic revenue leaks.</li>
+                        <li><strong>Loyalty Base Creation &amp; Client Engagement:</strong> Structuring reward programs, maintenance reminders, and personalised engagement touchpoints.</li>
+                        <li><strong>Industrial Process Adherence:</strong> Applying process controls to parts procurement, delivery timelines, and workshop quality audits.</li>
+                        <li><strong>Compliance &amp; Cross-Functional Collaboration:</strong> Improving coordination between sales, finance, spare parts, and service bays.</li>
+                        <li><strong>Digital Marketing &amp; Inbound Inquiries:</strong> Deploying geo-targeted digital advertising and social outreach to generate high-intent local showroom leads.</li>
+                    </ul>
+
+                    <h2>Traditional Selling vs. Modern Dealership Business Development</h2>
+
+                    <div class="table-wrap">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Operational Area</th>
+                                    <th>Traditional Dealership Approach</th>
+                                    <th>Structured Business Development</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sales Approach</td>
+                                    <td>Reactive; relies solely on walk-in traffic</td>
+                                    <td>Proactive; driven by digital marketing, CRM, and outreach</td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Retention</td>
+                                    <td>One-off transactions; inconsistent follow-ups</td>
+                                    <td>Structured loyalty programs and ongoing relationship management</td>
+                                </tr>
+                                <tr>
+                                    <td>Problem Solving</td>
+                                    <td>Temporary fixes to meet end-of-month quotas</td>
+                                    <td>In-depth Root Cause Analysis targeting systemic issues</td>
+                                </tr>
+                                <tr>
+                                    <td>Process Control</td>
+                                    <td>Unwritten, variable staff habits</td>
+                                    <td>Documented industrial SOPs and operational compliance</td>
+                                </tr>
+                                <tr>
+                                    <td>Team Structure</td>
+                                    <td>Disconnected sales, finance, and workshop units</td>
+                                    <td>Cross-functional alignment focused on dealership profitability</td>
+                                </tr>
+                                <tr>
+                                    <td>Performance Tracking</td>
+                                    <td>Basic sales volume counts</td>
+                                    <td>Business intelligence tracking margins, turnaround, and LTV</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Key Benefits of Business Development for Dealerships</h2>
+                    <ul>
+                        <li><strong>Increased Profitability:</strong> Pinpointing overhead waste and optimising aftermarket, finance, and service margins.</li>
+                        <li><strong>Predictable Lead Generation:</strong> Combining digital marketing with regional referral channels.</li>
+                        <li><strong>Higher Customer Lifetime Value (LTV):</strong> Cultivating active customer loyalty bases for repeat servicing and upgrades.</li>
+                        <li><strong>Standardised Service Delivery:</strong> Structured quality reviews and workflow adherence.</li>
+                        <li><strong>Stronger Workforce Efficiency:</strong> Compliance and team training to reduce onboarding friction.</li>
+                    </ul>
+
+                    <h2>Why Partner with Spreadwings Solutions?</h2>
+                    <p>
+                        Transforming dealership operations requires an experienced strategic partner who understands field realities, retail distribution networks, and process management.
+                    </p>
+                    <p>
+                        <strong>Spreadwings Solutions Private Limited</strong> is an Indore-based business management consultancy built on practical operational leadership. Established under the guidance of Founder and Managing Director <strong>Mr. Pradeep Kumar Das (Retd. Chief Manager, State Bank of India)</strong>, the firm originated from Das And Associates (founded in May 2019) and brings deep institutional expertise in financial management, operational consulting, and enterprise implementation.
+                    </p>
+
+                    <ul>
+                        <li><strong>End-to-End Operational Audits:</strong> Conducting Business Analysis and Root Cause Analysis to uncover profitability barriers.</li>
+                        <li><strong>Process &amp; Quality Engineering:</strong> Establishing industrial process adherence, quality reviews, and operational compliance.</li>
+                        <li><strong>Network &amp; Market Expansion:</strong> Designing loyalty base frameworks, influencer networks, and digital marketing strategies.</li>
+                        <li><strong>Hands-on Team Enablement:</strong> Providing cross-functional team building, sales enablement, and operational training.</li>
+                        <li><strong>Long-Term Advisory Partnerships:</strong> Working with leadership through continuous advisory programs.</li>
+                    </ul>
+
+                    <p>
+                        Whether your objective is expanding regional market share, restructuring service-bay profitability, or training your team to scale, <strong>Spreadwings Solutions Private Limited</strong> delivers the strategic framework to achieve measurable growth.
+                    </p>
+
+                    <h2>Summary</h2>
+                    <p>
+                        Business development is not merely an alternative term for sales; it is the comprehensive alignment of market research, workflow efficiency, customer retention, and process standardisation. For dealerships across India, adopting a disciplined business development strategy turns disconnected daily operations into an integrated engine for lasting profitability.
+                    </p>
+                </div>
+
+                <!-- POST FOOTER -->
+                <div class="post-footer">
+                    <div class="tags">
+                        <strong>Tags</strong>
+                        <a href="#" class="tag">Business</a>
+                        <a href="#" class="tag">Agency</a>
+                        <a href="#" class="tag">Dealership</a>
+                    </div>
+                    <div class="share">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <div class="related-posts">
+                    <a href="#" class="related-card">Bring to the table win-win survival strategies</a>
+                    <a href="#" class="related-card">How to lead a healthy &amp; well-balanced life</a>
+                </div>
+
+                <!-- COMMENTS -->
+                <section class="comments-section">
+                    <h2 class="comments-title">2 Comments</h2>
+
+                    <div class="comment">
+                        <img class="comment-avatar" src="images/comments/comment-1.jpg" alt="Kevin Marlin">
+                        <div>
+                            <div class="comment-top">
+                                <span class="comment-name">Kevin Marlin</span>
+                                <a href="#" class="reply-btn">Reply</a>
+                            </div>
+                            <p>Understanding the operational side of dealership growth makes the business development approach much clearer.</p>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <img class="comment-avatar" src="images/comments/comment-2.jpg" alt="Sarah Albert">
+                        <div>
+                            <div class="comment-top">
+                                <span class="comment-name">Sarah Albert</span>
+                                <a href="#" class="reply-btn">Reply</a>
+                            </div>
+                            <p>The focus on process adherence, customer retention and long-term profitability is very useful for dealership teams.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- COMMENT FORM -->
+                <section class="comment-form">
+                    <h2>Leave a Comment</h2>
+                    <form>
+                        <div class="form-row">
+                            <input type="text" placeholder="Enter Name" required>
+                            <input type="email" placeholder="Enter Email" required>
+                        </div>
+                        <textarea placeholder="Enter Message" required></textarea>
+                        <button type="submit" class="submit-btn">Submit Comment</button>
+                    </form>
+                </section>
+
+            </article>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <div class="sidebar-widget search-widget">
+                    <form class="search-box">
+                        <input type="search" placeholder="Search Here">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Latest Posts</h3>
+
+                    <a href="#" class="latest-post">
+                        <img src="images/blog/blog-1.jpg" alt="">
+                        <div>
+                            <small><i class="fa-solid fa-user"></i> Admin</small>
+                            <strong>Top crypto exchange influencers</strong>
+                        </div>
+                    </a>
+
+                    <a href="#" class="latest-post">
+                        <img src="images/blog/blog-2.jpg" alt="">
+                        <div>
+                            <small><i class="fa-solid fa-user"></i> Admin</small>
+                            <strong>Necessity may give us best virtual court</strong>
+                        </div>
+                    </a>
+
+                    <a href="#" class="latest-post">
+                        <img src="images/blog/blog-3.jpg" alt="">
+                        <div>
+                            <small><i class="fa-solid fa-user"></i> Admin</small>
+                            <strong>You should know about business plan</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="category-list">
+                        <li>Blueprint Design</li>
+                        <li class="active">Transforming Design</li>
+                        <li>Landscape Design</li>
+                        <li>Urban Design</li>
+                        <li>Industrial Design</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Tags</h3>
+                    <div class="sidebar-tags">
+                        <a href="#">All Project</a>
+                        <a href="#">Consultancy</a>
+                        <a href="#">Experience</a>
+                        <a href="#">Interior</a>
+                        <a href="#">Design</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recent Comments</h3>
+
+                    <div class="recent-comment">
+                        <span class="comment-icon"><i class="fa-solid fa-comment"></i></span>
+                        <span>A wordpress commenter on launch new mobile app</span>
+                    </div>
+
+                    <div class="recent-comment">
+                        <span class="comment-icon"><i class="fa-solid fa-comment"></i></span>
+                        <span>John Doe on template: comments</span>
+                    </div>
+
+                    <div class="recent-comment">
+                        <span class="comment-icon"><i class="fa-solid fa-comment"></i></span>
+                        <span>A wordpress commenter on launch new mobile app</span>
+                    </div>
+
+                    <div class="recent-comment">
+                        <span class="comment-icon"><i class="fa-solid fa-comment"></i></span>
+                        <span>John Doe on template: comments</span>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- CTA + FOOTER -->
+    <footer class="cta">
+        <div class="container">
+            <div class="cta-inner">
+                <h2>Book a Dealership Audit</h2>
+                <a href="#" class="cta-btn">To Know More</a>
+            </div>
+
+            <div class="footer-main">
+                <div class="footer-col">
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et molestias excepturi sint occaecati cupiditate non provident.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Address</h4>
+                    <p>Office: R-NH-10, Satyamitra Rajlaxmi Nature, Rau-CAT Road, Indore-453331 (Madhya Pradesh)</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 Spreadwings Solution Pvt Ltd – All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="closeMenu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const overlay = document.getElementById("overlay");
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle("active");
+            overlay.classList.toggle("active");
+        }
+
+        openMenu.addEventListener("click", toggleMenu);
+        closeMenu.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+
+        document.querySelectorAll(".comment-form form").forEach(form => {
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                alert("Comment form submitted.");
+            });
+        });
+    </script>
+
+</body>
+</html>
