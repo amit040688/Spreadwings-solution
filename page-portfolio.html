@@ -939,7 +939,7 @@
                     <h2 class="wow splt-txt" data-splitting>Book a Dealership Audit </h2>
                     <!-- <p>Stay in touch with the latest news and releases</p> -->
                     <div class="row g-0 justify-content-center">
-                        <a href="#" class="know-more">To Know More</a>
+                        <a href="#" class="know-more" data-bs-toggle="modal" data-bs-target="#knowMorePopup">To Know More</a>
                     </div>
                 </div>
             </div>
@@ -1042,6 +1042,92 @@
         integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
         data-cf-beacon='{"version":"2024.11.0","token":"88f4fa328f314d4c95a104b4a60b2313","r":1,"spa":2}'
         crossorigin="anonymous"></script>
+          <div class="modal fade" id="knowMorePopup" tabindex="-1" aria-labelledby="knowMorePopupLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered custom-modal">
+            <div class="modal-content">
+
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="knowMorePopupLabel">
+                        To Know More
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div> -->
+
+                <div class="modal-body">
+
+                    <!-- <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Enter phone number">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Submit
+                        </button>
+                    </form> -->
+                    <div class="consultation-form" id="lead-form">
+                        <!-- Top Label -->
+                        <div class="form-top">
+
+                        </div>
+                        <!-- Heading -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="knowMorePopupLabel">
+                              Book a Dealership Audit
+                            </h5>
+
+                            <button type="button" class="btn-close " id="popup-btn" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+
+                        <!-- Description -->
+
+                        <form action="#" method="post">
+                            <!-- Full Name -->
+                            <div class="form-group">
+
+                                <input type="text" name="full_name" placeholder="Full Name*" required="">
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <input type="email" name="email" placeholder="Email Address*" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Dealership Name*" required="">
+                            </div>
+                            <!-- Message -->
+                            <div class="form-group textarea-group">
+
+                                <textarea name="message" placeholder="Write a Message" rows="3"></textarea>
+                            </div>
+                            <!-- Submit -->
+                            <button type="submit" class="consultation-btn">
+                                <span>Submit</span>
+                                <span class="btn-arrow">
+                                    →
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
